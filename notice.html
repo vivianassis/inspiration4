@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration 4 é um sucesso</title>
+    <meta name="description"
+        content="Sem astronautas! Saiba detalhes sobre a Inspiration4, missão lançada em Setembro de 2021, foi a primeira a levar apenas turistas para o espaço.">
+
+        <meta property="og:locale" content="pt_BR">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Inspiration 4 é um sucesso">
+        <meta property="og:site_name" content="Inspiration 4 - A Viagem">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+    <style>
+        /* links Antes do scroll */
+        .navbar-scroll .nav-link,
+        .navbar-scroll .navbar-toggler-icon,
+        .navbar-scroll .navbar-brand {
+            color: #fff;
+        }
+
+        /* links Depois do scroll */
+        .navbar-scrolled .nav-link,
+        .navbar-scrolled .navbar-toggler-icon,
+        .navbar-scrolled .navbar-brand {
+            color: rgba(255, 255, 255, 0.87);
+        }
+
+        /* navbar depois do scroll */
+        .navbar-scroll,
+        .navbar-scrolled {
+            background-color: #cbbcb1a6;
+        }
+
+        .mask-custom {
+            backdrop-filter: blur(1px);
+            background-color: rgba(255, 255, 255, 0.295);
+        }
+
+        .navbar-brand {
+            font-size: 1.75rem;
+            letter-spacing: 3px;
+        }
+
+        /*Carrossel*/
+        #introCarousel,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+            height: 50%;
+        }
+
+        .carousel-item:nth-child(1) {
+            background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2021/08/Inspiration4-logo-695x500.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .carousel-item:nth-child(2) {
+            background-image: url('https://yournews.com/wp-content/uploads/2021/07/15365855_web1_Four-Crew-Members.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .carousel-item:nth-child(3) {
+            background-image: url('https://cdn.mos.cms.futurecdn.net/P8YtyD4GpoeXFpuTsNRmW8-480-80.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+
+        #introCarousel,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+            height: 50vh;
+        }
+
+
+        .navbar .nav-link {
+            color: rgb(206, 212, 245) !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+        <div class="container">
+            <a class="navbar-brand" href="#!"><span style="color: #052561;">Inspiration</span><span
+                    style="color: rgb(63, 204, 240);">4</span></a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./notice.html">Missão</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./api.html">Seu espaço hoje</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Carrossel-->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+            <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+            <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <!-- item -->
+            <div class="carousel-item active">
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="text-white text-center">
+                            <h1 class="mb-3">Space X</h1>
+                            <h5 class="mb-4">Alcança novo marco em exploração espacial</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- item -->
+            <div class="carousel-item">
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="text-white text-center">
+                            <h2>Tripulação escolhida por idealizadores e sorteio</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- item -->
+            <div class="carousel-item">
+                <div class="mask" style="
+                    background: linear-gradient(
+                      45deg,
+                      rgba(0, 0, 0, 0.5),
+                      rgba(0, 0, 214, 0.1) 100%
+                    );
+                  ">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="text-white text-center">
+                            <h2>Passeio durará 3 dias com pouso previsto no oceano.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles -->
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    <!-- Carrossel  -->
+
+    <!--Main -->
+    <main class="mt-5">
+        <div class="container">
+            <!-- Notícias-->
+            <section>
+                <div class="row">
+                    <div class="col-md-6 gx-5 mb-4">
+                        <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
+                            data-mdb-ripple-color="light">
+                            <img src="https://pbs.twimg.com/media/E_VfarCXMAgYMA2.jpg"
+                                alt="Falcon9, acoplada à Crew Dragon, Inspiration4" class="img-fluid"
+                                style="width:100vw;" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 gx-5 mb-4">
+                        <h4><strong>Detalhes da missão</strong></h4>
+                        <p class="text-muted">
+                            Com Inspiration4, Elon Musk sai na frente na corrida pelo turismo espacial, modalidade
+                            caracterizada pelo "voo" ao espaço feito por pessoas não profissionais.
+                            <br> Sua empresa, Space X, foi a responsável pela viagem, e está empolgada em adentrar
+                            cada vez mais no ramo do turismo "Além Terra".
+                            <br> A missão foi lançada dentro do Falcon9, foguete da Space X já bem conhecido, na
+                            plataforma 39A do Centro Kennedy da Nasa (Flórida), por volta das 21h, noite de 15 de
+                            Setembro de 2021. A partir desse lançamento, a nave Crew Dragon, anexada ao foguete,
+                            alcançou com êxito a órbita terrestre, na qual espera-se que de 15 voltas nesses 3 dias
+                            de viagem, pousando em seguida em algum local da Flórida, com o apoio de paraquedas
+                            anexados na própria nave.
+                        </p>
+
+                        <hr class="my-5" />
+
+                        <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
+                            data-mdb-ripple-color="light">
+                            <img src="https://www.letsott.com/assets/uploads/posts/countdown.jpg"
+                                alt="Netflix lança série retratando Inspiration4" class="img-fluid" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <p><strong>Aplaudida, Inspiration4 ganha seriado próprio, produzido pela Netflix</strong></p>
+                        <p class="text-muted">
+                            Também estão inclusas nas ações temas como caridade para hospital infantil, leilão de
+                            cerveja que viaja a
+                            bordo da nave, e vendas, seja de lembrancinhas, camisetas, canecas, etc.
+                            <br> Não poderia ser
+                            diferente, o lançamento foi um marco, tão celebrado pela equipe da Space X como se fosse a
+                            primeira vez que o homem saiu da Terra. De fato, foi a primeira vez que uma tripulação
+                            civil o fez sem apoio de astronautas, porém não será uma missão assim tão impossível quanto
+                            possa parecer. Durante a
+                            estadia em órbita, a Crew Dragon está preparada para praticamente "se conduzir sozinha", mas
+                            isso não tira, de forma alguma, o mérito dessa conquista.
+                            <br> Os participantes comemoram e
+                            esperam que mais pessoas possam fazer viagens espaciais depois deles.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!--Section: Content-->
+            <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                <img src="https://nexthorizonsspaceflightdotcom.files.wordpress.com/2021/03/aa1.jpg?w=860"
+                    alt="Tripulação da missão Inspiration4" class="img-fluid" style="width:100vw;" />
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <h4><strong>Conheça um pouco mais da tripulação</strong></h4>
+            <p class="text-muted">
+                Começando por <strong>Jared Isaacman</strong>, o homem mais jovem dessa imagem. O fundador da
+                empresa de processamento de pagamentos Shift4 Payment e piloto profissional é o grande responsável
+                pela Inspiration4. Ele pagou uma pequena fortuna não revelada, mas estimada por especialistas em
+                algumas dezenas de milhões de dólares pela viagem, com 4 lugares e traçou critérios para a escolha
+                dos outros 3, que foram, também, definidos como arquétipos de virtudes humanas, como vemos a seguir:
+                <br><strong>Hayley Arceneaux (a Esperança):</strong> Ela sobreviveu a um câncer nos ossos e foi
+                tratada no Hospital parceiro da missão, sendo escolhida como embaixadora do mesmo na viagem. A jovem
+                ruiva tem 29 anos e é atualmente a mulher mais nova a viajar para o espaço.
+                <br><strong>Sian Proctor (a Prosperidade):</strong> Sendo a 4ª mulher negra a ir ao espaço, a
+                pprofessora de geologia de 51 anos quase foi selecionada para se tornar uma astronauta da NASA.
+                <br><strong>Chris Sembroski (a Generosidade):</strong> Veterano das forças armadas dos Estados
+                Unidos, Chris atualmente com 42 anos, atua hoje no ramo da aviação e alcançou seu codinome
+                justamente por ser veterano.
+                Em todo tempo em que estiverem em órbita, os quatro integrantes terão sono, frequência cardíaca,
+                sangue e habilidades cognitivas monitorados. Tudo isso ajudará os pesquisadores, cientistas e
+                estudiosos a entenderem um pouco mais do comportamento do corpo humano "comum", quando no espaço.
+                <br><br>Com todo esse êxito, tanto da missão Inspiration4, quanto da Space X e da própria ciência
+                espacial, só podemos
+                esperar por cada vez mais projetos do tipo e que, quem sabe, num futuro não tão distante, consigamos
+                finalmente avançar com firmeza mais um passo na exploração que sempre foi inerente de nós, seres
+                humanos.
+            </p>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-dark" href="https://github.com/vivianassis">Viviana Souza</a>
+        </div>
+    </footer>
+
+
+
+</body>
+
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+<script src="./js/script.js"></script>
+
+</html>

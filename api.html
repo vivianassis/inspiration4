@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu espaço hoje! NASA</title>
+    <meta name="description" content="Veja o que a Nasa guardou para te mostrar hoje!">
+
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Seu espaço hoje! NASA">
+    <meta property="og:site_name" content="Inspiration 4 - A Viagem">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+    <style>
+        /* links Antes do scroll */
+        .navbar-scroll .nav-link,
+        .navbar-scroll .navbar-toggler-icon,
+        .navbar-scroll .navbar-brand {
+            color: #fff;
+        }
+
+        /* links Depois do scroll */
+        .navbar-scrolled .nav-link,
+        .navbar-scrolled .navbar-toggler-icon,
+        .navbar-scrolled .navbar-brand {
+            color: rgba(255, 255, 255, 0.87);
+        }
+
+        /* navbar depois do scroll */
+        .navbar-scroll,
+        .navbar-scrolled {
+            background-color: #cbbcb1a6;
+        }
+
+        .mask-custom {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.295);
+        }
+
+        .navbar-brand {
+            font-size: 1.75rem;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+            <div class="container">
+                <a class="navbar-brand" href="#!"><span style="color: #052561;">Inspiration</span><span
+                        style="color: rgb(63, 204, 240);">4</span></a>
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./notice.html">Missão</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./api.html">Seu espaço hoje</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container my-5">
+            <!-- Section: Intro -->
+            <section class="text-center mb-4">
+                <h4 class="mb-4"> <br><br>
+                    <strong>Curiosidade do dia (<u id="intro-date"></u>)</strong>
+                </h4>
+
+                <p>
+                    Diariamente, a NASA disponibiliza uma imagem ou vídeo diferente e interessante, e uma breve explanação do
+                    especialista sobre o assunto.
+                </p>
+            </section>
+            <!-- Section: Introdução -->
+
+            <section class="mb-4">
+                <!-- Section: Data -->
+                <section class="mb-4">
+                    <div class="form-outline datepicker" data-mdb-toggle-button="datepicker" data-mdb-format="yyyy-mm-dd"
+                        id="date-picker">
+                        <input type="text" class="form-control" id="wrapper-date" data-mdb-toggle="datepicker"
+                        disabled="" />
+                        
+                    </div>
+                </section>
+                <!-- Section: Date -->
+
+                <div class="row">
+                    <div class="col-md-8 mb-4 mb-md-0">
+
+                        <section id="wrapper-media" class=""></section>
+
+                    </div>
+
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <section class="">
+                            <h5 id="wrapper-title"></h5>
+                            <p class="text-muted mb-2">
+                                Especialista: <span id="wrapper-copyright"></span>
+                            </p>
+                            <p id="wrapper-explanation"></p>
+                        </section>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <hr class="my-5">
+
+            <!-- Section: Credits -->
+            <section class="">
+                <div class="row">
+                    <div class="col-md-7 mb-4 mb-md-0">
+                        <p>
+                            Essa página usa
+                            <a href="https://api.nasa.gov/api.html#authentication" target="_blank">NASA APOD API</a>
+                            para ajudá-lo.
+                        </p>
+
+                        <p class="font-weight-bold">
+                            Foi criada por Viviana Souza, usando
+                            <a href="https://mdbootstrap.com/docs/standard/" target="_blank">MDBootstrap UI KIT</a>
+                            e conhecimentos em front-end e SEO. Espero que gostem! :D
+                        </p>
+
+                        <p class="note note-primary">
+                            <strong>Video tutorial:</strong> A título de informação, deixo aqui um vídeo explicativo
+                            sobre a integração da API no site.
+                        </p>
+                    </div>
+
+                    <div class="col-md-5 mb-4 mb-md-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe class="shadow-1-strong rounded" src="https://www.youtube.com/embed/Y1n2a7YxYGY"
+                                title="YouTube video" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Credits -->
+        </div>
+    </header>
+
+
+        <footer class="bg-light text-center text-lg-start">
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-dark" href="https://github.com/vivianassis">Viviana Souza</a>
+            </div>
+        </footer>
+
+
+
+</body>
+
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+<script src="./js/script.js"></script>
+<script>
+    // Main 
+function nasaRequest() {
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            let data = JSON.parse(this.responseText);
+
+            // Data from NASA API json
+            let copyright = data["copyright"];
+            let date = data["date"];
+            let explanation = data["explanation"];
+            let hdurl = data["hdurl"];
+            let media_type = data["media_type"];
+            let title = data["title"];
+            let url = data["url"];
+
+            // HTML markup para images and videos
+            let imageType = `
+          <div
+            class="bg-image hover-overlay ripple shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img id="wrapper-image" src="" class="w-100" />
+            <a id="wrapper-hdurl" href="" target="_blank">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+          `;
+            let videoType = `
+          <div class="ratio ratio-16x9">
+            <iframe
+              class="shadow-1-strong rounded"
+              id="wrapper-video"
+              src=""
+              title="YouTube video"
+              allowfullscreen
+            ></iframe>
+          </div>
+          `;
+
+            // elementos estáticos
+            document.getElementById("wrapper-title").innerHTML = title;
+            document.getElementById(
+                "wrapper-explanation"
+            ).innerHTML = explanation;
+            document.getElementById("wrapper-copyright").innerHTML = copyright;
+            document.getElementById("intro-date").innerHTML = date;
+
+            // Se houver: images/videos
+            if (media_type === "video") {
+                document.getElementById("wrapper-media").innerHTML = videoType;
+                document.getElementById("wrapper-video").src = url;
+            } else {
+                document.getElementById("wrapper-media").innerHTML = imageType;
+                document.getElementById("wrapper-image").src = url;
+                document.getElementById("wrapper-hdurl").href = hdurl;
+            }
+        }
+    };
+    // Acessar o valor da data
+    let datepicker_date = document.getElementById("wrapper-date").value;
+    // NASA API link
+    let queryUrl = "https://api.nasa.gov/planetary/apod?";
+    // API KEY
+    let queryKey = "api_key=DaFi4M1aSffvFg0EGzfCxWruc6FyhR7wStWMPtxf&";
+    // selecionando a data
+    let queryDate = "date=" + datepicker_date + "&";
+    // formatação da query
+    let queryFull = queryUrl + queryKey + queryDate;
+
+    xmlhttp.open("GET", queryFull, true);
+    xmlhttp.send();
+}
+
+// datepicker inícip
+const datePicker = document.getElementById("date-picker");
+// chamada e request
+datePicker.addEventListener("dateChange.mdb.datepicker", (e) => {
+    nasaRequest();
+});
+
+// página inicial
+nasaRequest().onload;
+</script>
+
+</html>
